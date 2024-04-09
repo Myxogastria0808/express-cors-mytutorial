@@ -5,6 +5,7 @@
     "author": "Yuki Osada",
     "license": "MIT",
     "scripts": {
+        "start": "nodemon ./dist/index.js",
         "dev": "ts-node-dev ./src/index.ts",
         "compile": "tsc -p ."
     },

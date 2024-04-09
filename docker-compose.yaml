@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+    frontend:
+        image: frontend
+        container_name: frontend
+        ports:
+            - 8000:8000
+        build:
+            context: ./frontend
+            dockerfile: ./frontend.Dockerfile
+        tty: true
+        depends_on:
+            - backend
+        networks:
+            cors_network:
+                ipv4_address: 10.255.255.10
+    backend:
+        image: backend
+        container_name: backend
+        ports:
+            - 5000:5000
+        build:
+            context: ./backend
+            dockerfile: ./backend.Dockerfile
+        tty: true
+        networks:
+            cors_network:
+                ipv4_address: 10.255.255.20
+
+networks:
+    cors_network:
+        ipam:
+            driver: default
+            config:
+                - subnet: 10.255.255.0/24

@@ -5,7 +5,7 @@
     "author": "Yuki Osada",
     "license": "MIT",
     "scripts": {
-        "dev": "http-server ./src/ -a 127.0.0.1 -p 8000"
+        "dev": "http-server ./src/ -a 0.0.0.0 -p 8000"
     },
     "dependencies": {
         "@types/http-server": "^0.12.4",
