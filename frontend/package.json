@@ -1,0 +1,14 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Yuki Osada",
+    "license": "MIT",
+    "scripts": {
+        "dev": "http-server ./src/ -a 127.0.0.1 -p 8000"
+    },
+    "dependencies": {
+        "@types/http-server": "^0.12.4",
+        "http-server": "^14.1.1"
+    }
+}

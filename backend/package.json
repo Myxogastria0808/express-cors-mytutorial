@@ -1,0 +1,22 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "author": "Yuki Osada",
+    "license": "MIT",
+    "scripts": {
+        "dev": "ts-node-dev ./src/index.ts",
+        "compile": "tsc -p ."
+    },
+    "dependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.12.6",
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "nodemon": "^3.1.0",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.4.4"
+    }
+}
