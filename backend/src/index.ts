@@ -12,7 +12,7 @@ const corsOptions = {
     methods: ['GET'],
     allowedHeaders: ['Content-Type'],
     exposedHeaders: ['Content-Type'],
-    //credentials: true,
+    credentials: true,
     maxAge: 6000,
     optionSuccessStatus: 204,
 };
